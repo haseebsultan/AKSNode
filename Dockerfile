@@ -3,5 +3,5 @@ WORKDIR /root/
 COPY package*.json ./
 RUN  npm install
 COPY server.js ./
-
-CMD ["node", "./api/server.js"]
+EXPOSE 8080
+CMD ["node", "server.js"]
